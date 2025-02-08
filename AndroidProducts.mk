@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_porsche.mk
+    $(LOCAL_DIR)/voltage_porsche.mk
+    
+COMMON_LUNCH_CHOICES := \
+    voltage_porsche-user \
+    voltage_porsche-userdebug \
+    voltage_porsche-eng

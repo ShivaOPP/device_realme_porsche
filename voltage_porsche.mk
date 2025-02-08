@@ -13,9 +13,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/realme/porsche/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 
-PRODUCT_NAME := aosp_porsche
+PRODUCT_NAME := voltage_porsche
 PRODUCT_DEVICE := porsche
 PRODUCT_MANUFACTURER := Realme
 PRODUCT_BRAND := Realme
@@ -30,3 +30,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=RE58B2L1 \
     SystemDevice=RE58B2L1 \
     SystemName=RMX3312
+    
+# VoltageOS stuff    
+TARGET_BOOT_ANIMATION_RES := 1080
+VOLTAGE_BUILD_TYPE := UNOFFICIAL
