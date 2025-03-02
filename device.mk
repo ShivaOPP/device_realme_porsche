@@ -37,6 +37,10 @@ $(call inherit-product-if-exists, vendor/oplus/camera/opluscamera.mk)
 PRODUCT_SYSTEM_PROPERTIES += \
     persist.sys.brightness.low.gamma=true
 
+# Display
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.sys.brightness.disable_gamma_conversion=true
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc-service.nxp \
