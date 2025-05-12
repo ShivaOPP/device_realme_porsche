@@ -1,0 +1,6 @@
+# Defintions For InfinityX
+ ro.infinity.soc=Qualcomm Snapdragon 888
+ ro.infinity.battery=5000 mAh
+ ro.infinity.display=2400 x 1080, 120 Hz
+ ro.infinity.camera=50MP + 8MP + 2MP
+ ro.product.marketname=Realme GT 2

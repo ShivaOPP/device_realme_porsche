@@ -13,9 +13,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/realme/porsche/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_porsche
+PRODUCT_NAME := infinity_porsche
 PRODUCT_DEVICE := porsche
 PRODUCT_MANUFACTURER := Realme
 PRODUCT_BRAND := Realme
@@ -31,15 +31,13 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemDevice=RE58B2L1 \
     SystemName=RMX3312
     
-#mist os stuff
-MISTOS_MAINTAINER := ShivaOP
+#Infinity-X stuff
+INFINITY_MAINTAINER := ShivaOP
 TARGET_ENABLE_BLUR := true
-TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := false
-WITH_GMS := true
-TARGET_DEFAULT_PIXEL_LAUNCHER := false
+WITH_GAPPS := true
 TARGET_HAS_UDFPS := true
 EXTRA_UDFPS_ANIMATIONS := true 
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_SUPPORTS_TOUCHGESTURES := true
 TARGET_HAS_UDFPS := true
-TARGET_USES_OPLUS_CAMERA := true
+INFINITY_BUILD_TYPE := UNOFFICIAL
